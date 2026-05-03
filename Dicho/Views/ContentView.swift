@@ -1,3 +1,4 @@
+import StoreKit
 import SwiftUI
 
 struct ContentView: View {
@@ -9,6 +10,7 @@ struct ContentView: View {
     @State private var showsSettings = false
     @State private var showsPaywall = false
     @State private var didApplyScreenshotScenario = false
+    @Environment(\.requestReview) private var requestReview
 
     var body: some View {
         NavigationStack {
@@ -285,8 +287,27 @@ struct ContentView: View {
             let succeeded = await viewModel.submit(model: model)
             if succeeded {
                 usageMeter.recordSuccessfulTranslation(hasActiveSubscription: subscriptionManager.hasActiveSubscription)
+                requestReviewIfEligible()
             }
         }
+    }
+
+    private static let reviewPromptThreshold = 5
+    private static let reviewPromptedKey = "hasPromptedForReview"
+
+    private func requestReviewIfEligible() {
+        let defaults = UserDefaults.standard
+        let lifetimeKey = "lifetimeSuccessfulTranslations"
+        let count = defaults.integer(forKey: lifetimeKey) + 1
+        defaults.set(count, forKey: lifetimeKey)
+
+        guard count == Self.reviewPromptThreshold,
+              !defaults.bool(forKey: Self.reviewPromptedKey) else {
+            return
+        }
+
+        defaults.set(true, forKey: Self.reviewPromptedKey)
+        requestReview()
     }
 
     private func applyScreenshotScenarioIfNeeded() {
