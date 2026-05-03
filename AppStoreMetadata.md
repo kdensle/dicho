@@ -2,7 +2,7 @@
 
 ## Name
 
-dicho
+dicho spanish translator
 
 ## Subtitle
 

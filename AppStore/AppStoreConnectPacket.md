@@ -4,7 +4,9 @@ This is the copy/paste packet for App Store Connect. Replace bracketed placehold
 
 ## App Information
 
-Name: `dicho`
+Name: `dicho spanish translator`
+
+In-app brand: `dicho`
 
 Subtitle: `Natural Spanish-English translation`
 
