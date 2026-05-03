@@ -8,7 +8,7 @@ Name: `dicho spanish translator`
 
 In-app brand: `dicho`
 
-Subtitle: `Natural Spanish-English translation`
+Subtitle: `Spanish that sounds natural`
 
 Bundle ID: `com.kyledensley.dicho`
 

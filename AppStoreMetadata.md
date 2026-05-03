@@ -6,7 +6,7 @@ dicho spanish translator
 
 ## Subtitle
 
-Natural Spanish-English translation
+Spanish that sounds natural
 
 ## Promotional Text
 
