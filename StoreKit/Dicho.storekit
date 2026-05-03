@@ -1,0 +1,58 @@
+{
+  "identifier" : "DichoStoreKitConfiguration",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "0",
+    "_developerTeamID" : "DICHOLOCAL",
+    "_lastSynchronizedDate" : 766000000,
+    "_locale" : "en_US",
+    "_storefront" : "USA"
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "dicho-pro-group",
+      "localizations" : [
+        {
+          "displayName" : "dicho pro",
+          "locale" : "en_US"
+        }
+      ],
+      "name" : "dicho pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "2.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "dicho-pro-monthly-local",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited country-aware Spanish-English translations.",
+              "displayName" : "dicho pro",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "dicho.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "dicho pro monthly",
+          "subscriptionGroupID" : "dicho-pro-group"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

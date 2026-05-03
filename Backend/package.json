@@ -1,0 +1,16 @@
+{
+  "name": "dicho-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check server.mjs",
+    "doctor": "node check-env.mjs",
+    "doctor:strict": "node check-env.mjs --strict",
+    "healthcheck": "node healthcheck.mjs",
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,10 @@
+DerivedData/
+build/
+Backend/data/
+Backend/.env
+*.xcuserstate
+xcuserdata/
+!Dicho.xcodeproj/xcshareddata/
+!Dicho.xcodeproj/xcshareddata/xcschemes/
+!Dicho.xcodeproj/xcshareddata/xcschemes/Dicho.xcscheme
+.DS_Store

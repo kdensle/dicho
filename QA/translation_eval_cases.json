@@ -1,0 +1,62 @@
+[
+  {
+    "id": "mx-casual-plan",
+    "country": "mexico",
+    "message": "Can you come over later? I need to talk to you about something.",
+    "checks": ["natural Mexican Spanish", "not overly formal", "keeps slightly serious tone"]
+  },
+  {
+    "id": "mx-reassurance",
+    "country": "mexico",
+    "message": "No pasa nada, hablamos al rato.",
+    "checks": ["natural English", "captures reassurance", "does not translate literally"]
+  },
+  {
+    "id": "es-work-boundary",
+    "country": "spain",
+    "message": "I can't stay late today, but I can finish it first thing tomorrow.",
+    "checks": ["natural Spain Spanish", "work-appropriate", "clear boundary"]
+  },
+  {
+    "id": "co-politeness",
+    "country": "colombia",
+    "message": "Could you send it when you get a chance? No rush.",
+    "checks": ["warm Colombian Spanish", "polite", "not forced slang"]
+  },
+  {
+    "id": "ar-voseo",
+    "country": "argentina",
+    "message": "Are you free tonight or should we do another day?",
+    "checks": ["uses voseo naturally", "does not mix dialects", "casual tone"]
+  },
+  {
+    "id": "cl-idiom",
+    "country": "chile",
+    "message": "Estoy medio complicado hoy, te aviso apenas pueda.",
+    "checks": ["natural English", "captures being busy/limited", "does not overstate urgency"]
+  },
+  {
+    "id": "pe-respectful",
+    "country": "peru",
+    "message": "I really appreciate your help. Let me know what I owe you.",
+    "checks": ["natural Peruvian Spanish", "respectful", "not stiff"]
+  },
+  {
+    "id": "pr-caribbean",
+    "country": "puertoRico",
+    "message": "I'll be there in a bit, save me a seat.",
+    "checks": ["natural Puerto Rican Spanish", "readable", "not caricatured"]
+  },
+  {
+    "id": "us-code-switch",
+    "country": "unitedStates",
+    "message": "Tell your mom I said thanks, the food was amazing.",
+    "checks": ["natural U.S. Spanish", "bilingual-friendly", "not unnecessary code-switching"]
+  },
+  {
+    "id": "mixed-spanglish",
+    "country": "mexico",
+    "message": "Estoy running late pero ya voy, don't leave without me 😅",
+    "checks": ["handles mixed language", "preserves emoji", "natural target language"]
+  }
+]

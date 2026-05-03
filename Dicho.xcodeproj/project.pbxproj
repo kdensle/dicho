@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		101000000000000000000001 /* DichoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000001 /* DichoApp.swift */; };
+		101000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000002 /* ContentView.swift */; };
+		101000000000000000000003 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000003 /* SettingsView.swift */; };
+		101000000000000000000004 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000004 /* ResultView.swift */; };
+		101000000000000000000005 /* TranslationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000005 /* TranslationViewModel.swift */; };
+		101000000000000000000006 /* SpanishCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000006 /* SpanishCountry.swift */; };
+		101000000000000000000007 /* MessageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000007 /* MessageContext.swift */; };
+		101000000000000000000008 /* TranslationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000008 /* TranslationResult.swift */; };
+		101000000000000000000009 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000009 /* KeychainStore.swift */; };
+		10100000000000000000000A /* PromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10200000000000000000000A /* PromptBuilder.swift */; };
+		10100000000000000000000B /* OpenAITranslationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10200000000000000000000B /* OpenAITranslationClient.swift */; };
+		10100000000000000000000C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10200000000000000000000C /* Assets.xcassets */; };
+		10100000000000000000000D /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10200000000000000000000E /* AppStyle.swift */; };
+		10100000000000000000000E /* AppClipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10200000000000000000000F /* AppClipboard.swift */; };
+		10100000000000000000000F /* UsageMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000010 /* UsageMeter.swift */; };
+		101000000000000000000010 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000011 /* SubscriptionManager.swift */; };
+		101000000000000000000011 /* AppSubscriptionActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000012 /* AppSubscriptionActions.swift */; };
+		101000000000000000000012 /* LegalCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000013 /* LegalCopy.swift */; };
+		101000000000000000000013 /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000014 /* LegalView.swift */; };
+		101000000000000000000014 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000015 /* PaywallView.swift */; };
+		101000000000000000000015 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000016 /* AppConfiguration.swift */; };
+		101000000000000000000016 /* BackendTranslationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000017 /* BackendTranslationClient.swift */; };
+		101000000000000000000017 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000018 /* RootView.swift */; };
+		101000000000000000000018 /* LegalAcceptanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102000000000000000000019 /* LegalAcceptanceView.swift */; };
+		101000000000000000000019 /* InstallationIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10200000000000000000001B /* InstallationIdentity.swift */; };
+		10100000000000000000001A /* EntitlementToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10200000000000000000001C /* EntitlementToken.swift */; };
+		10100000000000000000001B /* AppHaptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10200000000000000000001D /* AppHaptics.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		102000000000000000000001 /* DichoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DichoApp.swift; sourceTree = "<group>"; };
+		102000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		102000000000000000000003 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		102000000000000000000004 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		102000000000000000000005 /* TranslationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewModel.swift; sourceTree = "<group>"; };
+		102000000000000000000006 /* SpanishCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpanishCountry.swift; sourceTree = "<group>"; };
+		102000000000000000000007 /* MessageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageContext.swift; sourceTree = "<group>"; };
+		102000000000000000000008 /* TranslationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationResult.swift; sourceTree = "<group>"; };
+		102000000000000000000009 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		10200000000000000000000A /* PromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptBuilder.swift; sourceTree = "<group>"; };
+		10200000000000000000000B /* OpenAITranslationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAITranslationClient.swift; sourceTree = "<group>"; };
+		10200000000000000000000C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10200000000000000000000D /* Dicho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dicho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10200000000000000000000E /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		10200000000000000000000F /* AppClipboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClipboard.swift; sourceTree = "<group>"; };
+		102000000000000000000010 /* UsageMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageMeter.swift; sourceTree = "<group>"; };
+		102000000000000000000011 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		102000000000000000000012 /* AppSubscriptionActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSubscriptionActions.swift; sourceTree = "<group>"; };
+		102000000000000000000013 /* LegalCopy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalCopy.swift; sourceTree = "<group>"; };
+		102000000000000000000014 /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
+		102000000000000000000015 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		102000000000000000000016 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		102000000000000000000017 /* BackendTranslationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendTranslationClient.swift; sourceTree = "<group>"; };
+		102000000000000000000018 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		102000000000000000000019 /* LegalAcceptanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalAcceptanceView.swift; sourceTree = "<group>"; };
+		10200000000000000000001A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10200000000000000000001B /* InstallationIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationIdentity.swift; sourceTree = "<group>"; };
+		10200000000000000000001C /* EntitlementToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitlementToken.swift; sourceTree = "<group>"; };
+		10200000000000000000001D /* AppHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHaptics.swift; sourceTree = "<group>"; };
+		10200000000000000000001E /* Dicho.storekit */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Dicho.storekit; sourceTree = "<group>"; };
+		10200000000000000000001F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		103000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		104000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				104000000000000000000002 /* Dicho */,
+				104000000000000000000008 /* StoreKit */,
+				104000000000000000000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		104000000000000000000002 /* Dicho */ = {
+			isa = PBXGroup;
+			children = (
+				102000000000000000000001 /* DichoApp.swift */,
+				104000000000000000000003 /* Models */,
+				104000000000000000000004 /* Services */,
+				104000000000000000000005 /* ViewModels */,
+				104000000000000000000006 /* Views */,
+				10200000000000000000000C /* Assets.xcassets */,
+				10200000000000000000001A /* Info.plist */,
+			);
+			path = Dicho;
+			sourceTree = "<group>";
+		};
+		104000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				102000000000000000000006 /* SpanishCountry.swift */,
+				102000000000000000000007 /* MessageContext.swift */,
+				102000000000000000000008 /* TranslationResult.swift */,
+				102000000000000000000013 /* LegalCopy.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		104000000000000000000004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				102000000000000000000009 /* KeychainStore.swift */,
+				10200000000000000000000F /* AppClipboard.swift */,
+				102000000000000000000010 /* UsageMeter.swift */,
+				102000000000000000000011 /* SubscriptionManager.swift */,
+				10200000000000000000001C /* EntitlementToken.swift */,
+				10200000000000000000001B /* InstallationIdentity.swift */,
+				102000000000000000000012 /* AppSubscriptionActions.swift */,
+				10200000000000000000001D /* AppHaptics.swift */,
+				102000000000000000000016 /* AppConfiguration.swift */,
+				10200000000000000000000A /* PromptBuilder.swift */,
+				10200000000000000000000B /* OpenAITranslationClient.swift */,
+				102000000000000000000017 /* BackendTranslationClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		104000000000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				102000000000000000000005 /* TranslationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		104000000000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10200000000000000000000E /* AppStyle.swift */,
+				102000000000000000000002 /* ContentView.swift */,
+				102000000000000000000018 /* RootView.swift */,
+				102000000000000000000003 /* SettingsView.swift */,
+				102000000000000000000004 /* ResultView.swift */,
+				102000000000000000000019 /* LegalAcceptanceView.swift */,
+				102000000000000000000014 /* LegalView.swift */,
+				102000000000000000000015 /* PaywallView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		104000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10200000000000000000000D /* Dicho.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		104000000000000000000008 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				10200000000000000000001E /* Dicho.storekit */,
+				10200000000000000000001F /* README.md */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		105000000000000000000001 /* Dicho */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 109000000000000000000002 /* Build configuration list for PBXNativeTarget "Dicho" */;
+			buildPhases = (
+				106000000000000000000001 /* Sources */,
+				103000000000000000000001 /* Frameworks */,
+				106000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dicho;
+			productName = Dicho;
+			productReference = 10200000000000000000000D /* Dicho.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		107000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					105000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 109000000000000000000001 /* Build configuration list for PBXProject "Dicho" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 104000000000000000000001;
+			productRefGroup = 104000000000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				105000000000000000000001 /* Dicho */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		106000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10100000000000000000000C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		106000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101000000000000000000001 /* DichoApp.swift in Sources */,
+				101000000000000000000002 /* ContentView.swift in Sources */,
+				101000000000000000000003 /* SettingsView.swift in Sources */,
+				101000000000000000000004 /* ResultView.swift in Sources */,
+				101000000000000000000005 /* TranslationViewModel.swift in Sources */,
+				101000000000000000000006 /* SpanishCountry.swift in Sources */,
+				101000000000000000000007 /* MessageContext.swift in Sources */,
+				101000000000000000000008 /* TranslationResult.swift in Sources */,
+				101000000000000000000009 /* KeychainStore.swift in Sources */,
+				10100000000000000000000A /* PromptBuilder.swift in Sources */,
+				10100000000000000000000B /* OpenAITranslationClient.swift in Sources */,
+				10100000000000000000000D /* AppStyle.swift in Sources */,
+				10100000000000000000000E /* AppClipboard.swift in Sources */,
+				10100000000000000000000F /* UsageMeter.swift in Sources */,
+				101000000000000000000010 /* SubscriptionManager.swift in Sources */,
+				101000000000000000000011 /* AppSubscriptionActions.swift in Sources */,
+				101000000000000000000012 /* LegalCopy.swift in Sources */,
+				101000000000000000000013 /* LegalView.swift in Sources */,
+				101000000000000000000014 /* PaywallView.swift in Sources */,
+				101000000000000000000015 /* AppConfiguration.swift in Sources */,
+				101000000000000000000016 /* BackendTranslationClient.swift in Sources */,
+				101000000000000000000017 /* RootView.swift in Sources */,
+				101000000000000000000018 /* LegalAcceptanceView.swift in Sources */,
+				101000000000000000000019 /* InstallationIdentity.swift in Sources */,
+				10100000000000000000001A /* EntitlementToken.swift in Sources */,
+				10100000000000000000001B /* AppHaptics.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		108000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		108000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		108000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DICHO_API_BASE_URL = "https://api.dicho.app";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Dicho/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyledensley.dicho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		108000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DICHO_API_BASE_URL = "https://api.dicho.app";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Dicho/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyledensley.dicho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		109000000000000000000001 /* Build configuration list for PBXProject "Dicho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108000000000000000000001 /* Debug */,
+				108000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		109000000000000000000002 /* Build configuration list for PBXNativeTarget "Dicho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108000000000000000000003 /* Debug */,
+				108000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 107000000000000000000001 /* Project object */;
+}

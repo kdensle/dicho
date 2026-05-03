@@ -1,0 +1,37 @@
+app = "dicho-api"
+primary_region = "dfw"
+
+[build]
+  dockerfile = "../Dockerfile"
+
+[env]
+  HOST = "0.0.0.0"
+  PORT = "8080"
+  DATA_DIR = "/data"
+  OPENAI_MODEL = "gpt-5.4-mini"
+  FREE_MONTHLY_LIMIT = "30"
+  MAX_MESSAGE_CHARS = "4000"
+  MAX_REQUEST_BYTES = "65536"
+  RATE_LIMIT_WINDOW_MS = "60000"
+  RATE_LIMIT_MAX_REQUESTS = "25"
+  APPLE_BUNDLE_ID = "com.kyledensley.dicho"
+  SUBSCRIPTION_PRODUCT_ID = "dicho.pro.monthly"
+  ALLOW_UNSIGNED_STOREKIT_JWS = "false"
+
+[[mounts]]
+  source = "dicho_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [[http_service.checks]]
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "10s"
+    method = "GET"
+    path = "/health"
