@@ -5,7 +5,7 @@ struct RootView: View {
     @AppStorage("acceptedLegalDate") private var acceptedLegalDate = ""
 
     var body: some View {
-        if acceptedLegalVersion == LegalDocument.currentVersion {
+        if acceptedLegalVersion == LegalDocument.currentVersion || AppConfiguration.isScreenshotMode {
             ContentView()
         } else {
             LegalAcceptanceView {

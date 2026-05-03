@@ -8,13 +8,17 @@ struct ContentView: View {
     @FocusState private var inputIsFocused: Bool
     @State private var showsSettings = false
     @State private var showsPaywall = false
+    @State private var didApplyScreenshotScenario = false
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    header
-                    usageBanner
+                    if !usesCompactScreenshotResult {
+                        header
+                        usageBanner
+                    }
+
                     translatorCard
                     statusSection
 
@@ -61,6 +65,9 @@ struct ContentView: View {
                 await subscriptionManager.refreshEntitlements()
                 usageMeter.resetIfNeeded()
             }
+            .onAppear {
+                applyScreenshotScenarioIfNeeded()
+            }
             .onChange(of: viewModel.requiresUpgrade) { _, requiresUpgrade in
                 if requiresUpgrade {
                     showsPaywall = true
@@ -75,6 +82,10 @@ struct ContentView: View {
         #else
         .automatic
         #endif
+    }
+
+    private var usesCompactScreenshotResult: Bool {
+        AppConfiguration.screenshotScenario == .result
     }
 
     private var header: some View {
@@ -274,6 +285,29 @@ struct ContentView: View {
             let succeeded = await viewModel.submit(model: model)
             if succeeded {
                 usageMeter.recordSuccessfulTranslation(hasActiveSubscription: subscriptionManager.hasActiveSubscription)
+            }
+        }
+    }
+
+    private func applyScreenshotScenarioIfNeeded() {
+        guard !didApplyScreenshotScenario, let scenario = AppConfiguration.screenshotScenario else {
+            return
+        }
+
+        didApplyScreenshotScenario = true
+        viewModel.applyScreenshotScenario(scenario)
+        inputIsFocused = false
+
+        switch scenario {
+        case .home, .result:
+            break
+        case .paywall:
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+                showsPaywall = true
+            }
+        case .settings:
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+                showsSettings = true
             }
         }
     }

@@ -48,7 +48,7 @@ struct PaywallView: View {
                                 .frame(height: 50)
                         }
                         .buttonStyle(TranslateButtonStyle())
-                        .disabled(subscriptionManager.proMonthlyProduct == nil)
+                        .disabled(subscriptionManager.proMonthlyProduct == nil && !AppConfiguration.isScreenshotMode)
 
                         Button {
                             AppHaptics.lightImpact()
@@ -68,7 +68,7 @@ struct PaywallView: View {
                         .buttonStyle(.plain)
                         .foregroundStyle(AppStyle.primaryAccent)
 
-                        if let message = subscriptionManager.message {
+                        if let message = subscriptionManager.message, !AppConfiguration.isScreenshotMode {
                             Text(message)
                                 .font(.footnote)
                                 .foregroundStyle(.secondary)
@@ -118,8 +118,10 @@ struct PaywallView: View {
                 }
             }
             .task {
-                await subscriptionManager.loadProducts()
-                await subscriptionManager.refreshEntitlements()
+                if !AppConfiguration.isScreenshotMode {
+                    await subscriptionManager.loadProducts()
+                    await subscriptionManager.refreshEntitlements()
+                }
             }
         }
     }

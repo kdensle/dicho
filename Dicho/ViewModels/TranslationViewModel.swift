@@ -134,6 +134,36 @@ final class TranslationViewModel: ObservableObject {
         AppHaptics.lightImpact()
     }
 
+    func applyScreenshotScenario(_ scenario: AppConfiguration.ScreenshotScenario) {
+        errorMessage = nil
+        requiresUpgrade = false
+        isLoading = false
+
+        switch scenario {
+        case .home, .settings, .paywall:
+            selectedCountry = .mexico
+            inputText = "Can you come over later?"
+            result = nil
+            clipboardMessage = nil
+        case .result:
+            selectedCountry = .mexico
+            inputText = "I didn't mean it that way."
+            result = TranslationResult(
+                sourceLanguage: "English",
+                targetLanguage: "Spanish",
+                directionLabel: "English -> Mexican Spanish",
+                translation: "No quise decirlo as\u{00ED}.",
+                nuance: "Natural for a quick apology. It keeps the tone sincere without sounding overly formal.",
+                countryNotes: [
+                    "Keeps the apology direct and conversational.",
+                    "Works naturally in everyday Mexican Spanish."
+                ],
+                confidence: "High"
+            )
+            clipboardMessage = "Copied automatically"
+        }
+    }
+
     private static func message(for urlError: URLError) -> String {
         switch urlError.code {
         case .notConnectedToInternet:

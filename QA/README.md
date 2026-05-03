@@ -29,3 +29,13 @@ To include a Release simulator build:
 ```bash
 Scripts/release_check.sh --build-simulator
 ```
+
+## Screenshots
+
+Use the screenshot helper after booting a simulator:
+
+```bash
+SIMULATOR_ID=booted Scripts/capture_screenshot.sh
+```
+
+It captures hidden demo scenarios for the home, result, paywall, and settings screens.

@@ -10,6 +10,9 @@ DERIVED_DATA="${DERIVED_DATA:-/tmp/DichoScreenshotDerivedData}"
 DESTINATION="${DESTINATION:-platform=iOS Simulator,name=iPhone 17 Pro Max}"
 APP_PATH="${APP_PATH:-$DERIVED_DATA/Build/Products/Release-iphonesimulator/Dicho.app}"
 BUILD="${BUILD:-1}"
+SCENARIO="${SCENARIO:-all}"
+SCREENSHOT_DELAY="${SCREENSHOT_DELAY:-3}"
+STATUS_BAR="${STATUS_BAR:-1}"
 
 mkdir -p "$OUT_DIR"
 
@@ -29,10 +32,31 @@ if [[ "$SIMULATOR_ID" != "booted" ]]; then
 fi
 
 xcrun simctl install "$SIMULATOR_ID" "$APP_PATH"
-xcrun simctl launch "$SIMULATOR_ID" com.kyledensley.dicho
-sleep "${SCREENSHOT_DELAY:-2}"
 
-STAMP="$(date +%Y%m%d-%H%M%S)"
-xcrun simctl io "$SIMULATOR_ID" screenshot "$OUT_DIR/dicho-$STAMP.png"
+if [[ "$STATUS_BAR" == "1" ]]; then
+  xcrun simctl status_bar "$SIMULATOR_ID" override \
+    --time "9:41" \
+    --wifiBars 3 \
+    --cellularBars 4 \
+    --batteryState charged \
+    --batteryLevel 100 2>/dev/null || true
+fi
 
-echo "Screenshot written to $OUT_DIR/dicho-$STAMP.png"
+capture() {
+  local scenario="$1"
+  local output="$OUT_DIR/dicho-$scenario.png"
+
+  xcrun simctl terminate "$SIMULATOR_ID" com.kyledensley.dicho 2>/dev/null || true
+  xcrun simctl launch "$SIMULATOR_ID" com.kyledensley.dicho --dicho-screenshot "$scenario"
+  sleep "$SCREENSHOT_DELAY"
+  xcrun simctl io "$SIMULATOR_ID" screenshot "$output"
+  echo "Screenshot written to $output"
+}
+
+if [[ "$SCENARIO" == "all" ]]; then
+  for scenario in home result paywall settings; do
+    capture "$scenario"
+  done
+else
+  capture "$SCENARIO"
+fi
