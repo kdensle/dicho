@@ -24,15 +24,15 @@ Everything below this line requires your accounts, credentials, domain, or final
 - Add `OPENAI_API_KEY` as a secret.
 - Confirm `/health` returns 200.
 - Confirm `/ready` returns 200.
-- Point `api.dicho.app` or your final API domain to the backend.
+- Point `api.dicho.app` or your final API domain to the backend later if you want a branded API URL. The current live backend is `https://dicho-api.onrender.com`.
 
 ## 4. Public Website
 
-- Host `PublicSite/` at `https://dicho.app`.
+- Host `PublicSite/` at `https://stupendous-dasik-bfe500.netlify.app`.
 - Confirm these URLs work:
-  - `https://dicho.app/support`
-  - `https://dicho.app/privacy`
-  - `https://dicho.app/terms`
+  - `https://stupendous-dasik-bfe500.netlify.app/support`
+  - `https://stupendous-dasik-bfe500.netlify.app/privacy`
+  - `https://stupendous-dasik-bfe500.netlify.app/terms`
 - Replace `support@dicho.app` if you use a different monitored support address.
 - Have counsel review final legal copy.
 

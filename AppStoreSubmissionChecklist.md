@@ -48,7 +48,7 @@
 - Set `OPENAI_API_KEY` and `OPENAI_MODEL` on the backend host.
 - Backend now enforces monthly usage counts server-side by installation ID.
 - Backend now checks StoreKit transaction JWS for active `dicho.pro.monthly` entitlement.
-- Update the Xcode `DICHO_API_BASE_URL` build setting if you do not use `https://api.dicho.app`.
+- Xcode `DICHO_API_BASE_URL` is currently `https://dicho-api.onrender.com`.
 - Replace the JSON usage store with a managed database before meaningful scale.
 
 ## Quality

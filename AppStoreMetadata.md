@@ -56,17 +56,17 @@ Please test with:
 - Open Settings to verify Terms, Privacy, Restore Purchases, Manage Subscription, and appearance controls.
 
 Backend health checks:
-- Health: `https://api.dicho.app/health`
-- Readiness: `https://api.dicho.app/ready`
+- Health: `https://dicho-api.onrender.com/health`
+- Readiness: `https://dicho-api.onrender.com/ready`
 
 ## Support URL
 
-https://dicho.app/support
+https://stupendous-dasik-bfe500.netlify.app/support
 
 ## Privacy Policy URL
 
-https://dicho.app/privacy
+https://stupendous-dasik-bfe500.netlify.app/privacy
 
 ## Terms of Use URL
 
-https://dicho.app/terms
+https://stupendous-dasik-bfe500.netlify.app/terms

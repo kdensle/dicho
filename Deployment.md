@@ -29,14 +29,14 @@ Before meaningful scale, move usage tracking from the JSON file to a managed dat
 
 ## DNS
 
-- Point `api.dicho.app` to the backend host.
+- Point `api.dicho.app` to the backend host later if you want a branded API domain. The current live backend is `https://dicho-api.onrender.com`.
 - Enable HTTPS.
-- Confirm `GET https://api.dicho.app/health` returns `200`.
-- Confirm `GET https://api.dicho.app/ready` returns `200` only after `OPENAI_API_KEY` is configured.
+- Confirm `GET https://dicho-api.onrender.com/health` returns `200`.
+- Confirm `GET https://dicho-api.onrender.com/ready` returns `200` only after `OPENAI_API_KEY` is configured.
 
 ## iOS
 
-- Confirm `DICHO_API_BASE_URL` in Xcode is `https://api.dicho.app`.
+- Confirm `DICHO_API_BASE_URL` in Xcode is `https://dicho-api.onrender.com`.
 - Confirm bundle ID is final: `com.kyledensley.dicho` or your Apple Developer account’s preferred identifier.
 - Set your Apple Developer Team in Signing & Capabilities.
 - Archive using Release.
@@ -55,7 +55,7 @@ Before meaningful scale, move usage tracking from the JSON file to a managed dat
 
 ## Public Website
 
-- Host `PublicSite/` at `https://dicho.app`.
+- Host `PublicSite/` at `https://stupendous-dasik-bfe500.netlify.app`.
 - Confirm `/support`, `/privacy`, and `/terms` resolve publicly before App Review.
 - Replace the placeholder support email if needed.
 - Have counsel review the legal copy before launch.

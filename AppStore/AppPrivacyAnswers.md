@@ -89,7 +89,7 @@ Reason: Backend and platform logs may include request status, request IDs, error
 Use:
 
 ```text
-https://dicho.app/privacy
+https://stupendous-dasik-bfe500.netlify.app/privacy
 ```
 
 ## Privacy Choices URL
@@ -97,5 +97,5 @@ https://dicho.app/privacy
 Optional. If you host a support/data request page later, use:
 
 ```text
-https://dicho.app/support
+https://stupendous-dasik-bfe500.netlify.app/support
 ```

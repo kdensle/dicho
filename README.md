@@ -26,7 +26,7 @@ The first version focuses on:
 
 The app uses `gpt-5.4-mini` by default because OpenAI's current model docs describe it as a lower-latency, lower-cost frontier model with multilingual text support. The API call uses the Responses API and Structured Outputs so the UI receives predictable JSON.
 
-For production, do not ship a raw API key inside the app. The Release app now calls the backend configured by `DICHO_API_BASE_URL`, currently `https://api.dicho.app`. The starter backend lives in `Backend/`.
+For production, do not ship a raw API key inside the app. The Release app now calls the backend configured by `DICHO_API_BASE_URL`, currently `https://dicho-api.onrender.com`. The starter backend lives in `Backend/`.
 
 ## Subscription Setup
 

@@ -85,13 +85,13 @@ Initial release.
 
 ## URLs
 
-Marketing URL: `https://dicho.app`
+Marketing URL: `https://stupendous-dasik-bfe500.netlify.app`
 
-Support URL: `https://dicho.app/support`
+Support URL: `https://stupendous-dasik-bfe500.netlify.app/support`
 
-Privacy Policy URL: `https://dicho.app/privacy`
+Privacy Policy URL: `https://stupendous-dasik-bfe500.netlify.app/privacy`
 
-Terms of Use URL: `https://dicho.app/terms`
+Terms of Use URL: `https://stupendous-dasik-bfe500.netlify.app/terms`
 
 ## App Review Notes
 
@@ -113,8 +113,8 @@ Suggested review flow:
 6. Open the paywall from the Upgrade button to review subscription presentation.
 
 Backend health checks:
-Health: https://api.dicho.app/health
-Readiness: https://api.dicho.app/ready
+Health: https://dicho-api.onrender.com/health
+Readiness: https://dicho-api.onrender.com/ready
 ```
 
 ## Export Compliance Draft
